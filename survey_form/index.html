@@ -6,78 +6,65 @@
     </head>
     <body>
         <header>
-            <h1>freeCodeCamp Survey Form</h1>
-            <h3>Thank you for taking the time to help us improve the platform</h3>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
         </header>
         <main>
             <form action="" id="survey-form">
-                <div class="basic-info">
-                    <label for="name" id="name-label">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
-                    <label for="name" id="email-label">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email">
-                    <label for="name" id="age-label">Age</label>
-                    <input type="number" name="age" id="age" placeholder="Age" min="10" max="99">
-                </div>
-                <div class="role-dropdown">
-                    <label for="dropdown">What is your current role?</label>
-                    <select name="dropdown" id="dropdown">
-                        <option selected="True" disabled="disabled">role</option>
-                        <option value="student">Student</option>
-                        <option value="ftWorker">Full-Time worker</option>
-                        <option value="ftLearner">Full-Time learner</option>
-                        <option value="prefNA">Prefer not to say</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <div class="radioBTNS">
+                
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                <label for="name" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <label for="name" id="age-label">Age</label>
+                <input type="number" name="age" id="age" placeholder="Age" min="10" max="99">
+                
+                
+                <label for="dropdown">What is your current role?</label>
+                <select name="dropdown" id="dropdown">
+                    <option selected="True" disabled="disabled">role</option>
+                    <option value="student">Student</option>
+                    <option value="ftWorker">Full-Time worker</option>
+                    <option value="ftLearner">Full-Time learner</option>
+                    <option value="prefNA">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                
                 <label for="recommendation">Would you recommend freeCodeCamp to a friend?</label>
-                <input type="radio" name="recommendation" id="definitely">
-                <label for="definitely">Definitely</label>
-                <input type="radio" name="recommendation" id="maybe">
-                <label for="maybe">Maybe</label>
-                <input type="radio" name="recommendation" id="notSure">
-                <label for="notSure">Not sure</label>
-                </div>
-                <div class="feature-dropdown">
-                    <label for="features">What is your favorite feature of freeCodeCamp?</label>
-                    <select name="features" id="features">
-                        <option selected="True" disabled="disabled">Select an option</option>
-                        <option value="challenges">Challenges</option>
-                        <option value="projects">Projects</option>
-                        <option value="community">Community</option>
-                        <option value="openSRC">Open Source</option>
-                    </select>
-                </div>
-                <div class="checkboxes">
-                    <input type="checkbox" name="checkbox" id="frontEnd" value="1">
-                    <label for="frontEnd">Front-end Projects</label>
-                    <input type="checkbox" name="checkbox" id="backEnd" value="2">
-                    <label for="backEnd">Back-end Projects</label>
-                    <input type="checkbox" name="checkbox" id="dataVisualization" value="3">
-                    <label for="dataVisualization">Data Visualization</label>
-                    <input type="checkbox" name="checkbox" id="challenges" value="4">
-                    <label for="challenges">Challenges</label>
-                    <input type="checkbox" name="checkbox" id="openSRC" value="5">
-                    <label for="openSRC">Open Source Community</label>
-                    <input type="checkbox" name="checkbox" id="gitterHelp" value="6">
-                    <label for="gitterHelp">Gitter help rooms</label>
-                    <input type="checkbox" name="checkbox" id="videos" value="7">
-                    <label for="videos">Videos</label>
-                    <input type="checkbox" name="checkbox" id="cityMeetups" value="8">
-                    <label for="cityMeetups">City meetups</label>
-                    <input type="checkbox" name="checkbox" id="wiki" value="9">
-                    <label for="wiki">Wiki</label>
-                    <input type="checkbox" name="checkbox" id="forums" value="10">
-                    <label for="forums">Forums</label>
-                    <input type="checkbox" name="checkbox" id="addCourses" value="11">
-                    <label for="addCourses">Additional courses</label>
-                </div>
-                <div class="submit">
-                    <label for="suggestions">Any comments or suggestions?</label>
-                    <input type="text" name="suggestions" id="suggestions" placeholder="Enter your comments here...">
-                    <input type="submit" value="submit">
-                </div>
+                <label><input type="radio" name="recommendation" id="definitely"> Definitely</label>
+                <label><input type="radio" name="recommendation" id="maybe"> Maybe</label>
+                <label><input type="radio" name="recommendation" id="notSure"> Not sure</label>
+                
+                
+                <label for="features">What is your favorite feature of freeCodeCamp?</label>
+                <select name="features" id="features">
+                    <option selected="True" disabled="disabled">Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSRC">Open Source</option>
+                </select>
+                
+                
+                    
+                <label><input type="checkbox" name="checkbox" id="frontEnd" value="1"> Front-end Projects</label>
+                <label><input type="checkbox" name="checkbox" id="backEnd" value="2"> Back-end Projects</label>
+                <label><input type="checkbox" name="checkbox" id="dataVisualization" value="3"> Data Visualization</label>
+                <label><input type="checkbox" name="checkbox" id="challenges" value="4"> Challenges</label>
+                <label><input type="checkbox" name="checkbox" id="openSRC" value="5"> Open Source Community</label>
+                <label><input type="checkbox" name="checkbox" id="gitterHelp" value="6"> Gitter help rooms</label>
+                <label><input type="checkbox" name="checkbox" id="videos" value="7"> Videos</label>
+                <label><input type="checkbox" name="checkbox" id="cityMeetups" value="8"> City meetups</label>
+                <label><input type="checkbox" name="checkbox" id="wiki" value="9"> Wiki</label>
+                <label><input type="checkbox" name="checkbox" id="forums" value="10"> Forums</label>
+                <label><input type="checkbox" name="checkbox" id="addCourses" value="11"> Additional courses</label>
+                
+                
+                <label for="suggestions">Any comments or suggestions?</label>
+                <input type="text" name="suggestions" id="suggestions" placeholder="Enter your comments here...">
+                <input type="submit" value="submit">
+                
             </form>
         </main>
     </body>
